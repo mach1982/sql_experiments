@@ -1,0 +1,19 @@
+CREATE TABLE MY_EMPLOYEE
+(ID  NUMBER(4) CONSTRAINT MY_EMPLOYEE_ID_NN   NOT NULL,
+ LAST_NAME  VARCHAR2(25),
+ FIRST_NAME VARCHAR2(25),
+ USERID     VARCHAR2(8),
+ SALARY     NUMBER(9,2)
+);
+
+DESCRIBE MY_EMPLOYEE;
+
+
+INSERT INTO MY_EMPLOYEE 
+VALUES (1,'Patel','Ralph','rpatel',895);
+
+insert into MY_EMPLOYEE(id,last_name,first_name,userid,salary)
+VALUES(2,'Dancs','Betty','bdance',860);
+
+select*
+from MY_EMPLOYEE;
